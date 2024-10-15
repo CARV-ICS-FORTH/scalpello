@@ -1,5 +1,11 @@
 #define MAX_CSV_FNAME 32
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/mman.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include "papi_tracer.h"
 
 
