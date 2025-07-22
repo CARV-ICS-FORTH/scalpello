@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 	samples++;
     }
     close(fd);
-    munmap(tracepoint, sizeof(pmu_tracepoint) + sizeof(pmu_sample) * number_of_events);
+    munmap(tracepoint, sizeof(pmu_tracepoint) + sizeof(pmu_sample) * max_samples);
     fclose(csvf);
     return 0;
 }
